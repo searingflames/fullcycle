@@ -12,7 +12,7 @@ services:
     depends_on:
       - mysql
     volumes:
-      - ./node:/usr/src/app
+      - /usr/src/app
     networks:
       - node-network
     restart: unless-stopped
